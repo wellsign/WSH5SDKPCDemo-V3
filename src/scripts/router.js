@@ -20,5 +20,7 @@ export default <HashRouter>
   <Route path="/sign/thumbnail/window" exact component={ Loadable({ loader: () => import('../pages/sign.thumbnail.window.js'), loading: pLoading }) }></Route>
   {/* 缩略图+验签（指定节点）） */}
   <Route path="/sign/thumbnail/node" exact component={ Loadable({ loader: () => import('../pages/sign.thumbnail.node.js'), loading: pLoading }) }></Route>
+  {/* 自定义-文本 */}
+  <Route path="/sign/text" exact component={ Loadable({ loader: () => import('../pages/sign.text.js'), loading: pLoading }) }></Route>
   {/* end */}
 </HashRouter>

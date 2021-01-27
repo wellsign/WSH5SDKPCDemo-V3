@@ -42,6 +42,12 @@ export default class Home extends Component {
             { path: '/sign/thumbnail/window', title: '缩略图+验签（可拖动窗口）' },
             { path: '/sign/thumbnail/node', title: '缩略图+验签（指定节点）' }
           ]
+        },
+        {
+          name: '文本',
+          pathArr: [
+            { path: '/sign/text', title: '自定义-插入文本' }
+          ]
         }
       ]
     }
@@ -52,7 +58,7 @@ export default class Home extends Component {
   }
 
   render () {
-    return <div style={{ width: '100%', height: '120%',  background: '#F0F2F5' }}>
+    return <div style={{ width: '100%', background: '#F0F2F5' }}>
       <div style={{ width: '1000px', margin: '0 auto' }}>
         <h2 style={{ padding: '20px 0' }}>好签H5SDK PC端签字示例</h2>
         {
